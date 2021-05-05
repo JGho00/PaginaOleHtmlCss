@@ -1,0 +1,264 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.enlaces {
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.enlaces:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.headerOle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logoOle {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes-botones {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.enlaces-header {
+    text-align: center;
+}
+
+.enlaces-header>a {
+    color: #23B81C;
+}
+
+.escudos-equipos {
+    text-align: center;
+    border-top: 2px solid gray;
+    padding: 10px;
+}
+
+.enlaces-competencias {
+    padding-bottom: 10px;
+}
+
+.contenidoPagina {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.noticia-principal {
+    border-top: 3px solid gray;
+    width: 100%;
+    justify-content: center;
+}
+
+.img-noticiaSecundaria-font {
+    background-image: url(https://images.ole.com.ar/2021/04/26/GGVmBOyfx_1000x472__1.jpg#1619465960165);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-noticiaPrincipal-font {
+    background-image: url(https://images.ole.com.ar/2021/04/07/nA9PYYhWb_1256x620__2.jpg#1617899345391);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-noticiaTerciaria-font {
+    background-image: url(https://images.ole.com.ar/2021/03/05/pbaBF569j_1000x472__4.jpg#16194913937875);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-noticiaPrincipal-font>h2 {
+    color: white;
+}
+
+.img-noticiaPrincipal-font>h6 {
+    color: white;
+}
+
+.noticias {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.noticias>div {
+    max-width: 320px;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.n>img {
+    width: 100%;
+}
+
+.n>a {
+    font-size: 20px;
+    font-weight: 200;
+    color: black
+}
+
+.n>p {
+    font-weight: bolder;
+}
+
+.cuadricula-grid {
+    padding-top: 30px;
+    border-top: 3px solid gray;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr;
+    grid-gap: 5px;
+    width: 100%;
+}
+
+.grid-column1 {
+    justify-self: center;
+    display: grid;
+    grid-gap: 10px;
+    max-width: 350px;
+    min-width: 250px;
+    padding: 10px;
+}
+
+.grid-column1>div {
+    width: 100%;
+}
+
+.noticias-grilla>img {
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #23B81C;
+}
+
+.seguinosEn {
+    text-align: right;
+    padding: 20px;
+}
+
+.enlacesRapidos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.footerInferior {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footerInferior>a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.footerInferior>a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.seccionesFooter {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width:1050px) {
+    .contenidoPagina {
+        padding: 0px;
+        justify-content: flex-start;
+        align-items: flex-start
+    }
+    .img-noticiaSecundaria-font>h6 {
+        font-size: 20px;
+    }
+    header {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+    .logoOle {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .headerOle {
+        grid-row: 2;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .enlaces-header {
+        padding: 10px;
+        text-align: center;
+    }
+    .redes {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+    .enlaces-header {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:658px) {
+    .cuadricula-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
